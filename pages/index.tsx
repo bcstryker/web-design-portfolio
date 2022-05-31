@@ -1,7 +1,6 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import NavBar from '../components/navBar'
-
+import type {NextPage} from "next";
+import Head from "next/head";
+import NavBar from "../components/LeftNavBar";
 
 const Home: NextPage = () => {
   return (
@@ -15,28 +14,22 @@ const Home: NextPage = () => {
         {/* <NavBar/> */}
         <main>
           <div className="container mx-auto mt-15">
-            <NavBar/>
+            <NavBar />
           </div>
           <div className="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
-            <p className="text-white font-extrabold text-3xl md:text-5xl">   
-              Brandon Stryker
-            </p>
-            <p className="text-xl md:text-2xl text-gray-500"> 
-              Welcome to my Portfolio
-            </p>
+            <p className="text-white font-extrabold text-3xl md:text-5xl">Brandon Stryker</p>
+            <p className="text-xl md:text-2xl text-gray-500">Welcome to my Portfolio</p>
           </div>
         </main>
       </body>
 
       <footer>
         <div className="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
-          <p className="text-xl md:text-2xl text-gray-500"> 
-            Work in progress
-          </p>
+          <p className="text-xl md:text-2xl text-gray-500">Work in progress</p>
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
